@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arq. Julio Ernesto Escobar Noboa | Arquitectura de Precisión</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Arq. Julio Ernesto Escobar Noboa, arquitecto en Quito, Ecuador. Diseño residencial, arquitectura corporativa, interiorismo y urbanismo de alta calidad en Ecuador.">
+    <meta name="keywords" content="arquitecto Quito, arquitecto Ecuador, diseño arquitectónico Quito, arquitectura residencial Quito, arquitectura corporativa Ecuador, interiorismo Quito, urbanismo Ecuador, diseño de interiores Quito, arquitecto profesional Ecuador, proyectos arquitectónicos Quito, viviendas contemporáneas Ecuador, remodelación Quito, arquitectura de lujo Ecuador, JE Escobar arquitecto, Julio Ernesto Escobar Noboa">
+    <meta name="author" content="Arq. Julio Ernesto Escobar Noboa">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="EC-P">
+    <meta name="geo.placename" content="Quito, Ecuador">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Arq. Julio Ernesto Escobar Noboa | Arquitecto en Quito, Ecuador">
+    <meta property="og:description" content="Diseño residencial, arquitectura corporativa, interiorismo y urbanismo de alta calidad en Quito, Ecuador. Proyectos que transforman espacios en experiencias.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
+    <meta property="og:image" content="portafolio/arq.-ernesto-escobar/julio-ernesto-escobar-noboa.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arq. Julio Ernesto Escobar Noboa | Arquitecto en Quito, Ecuador">
+    <meta name="twitter:description" content="Diseño residencial, arquitectura corporativa, interiorismo y urbanismo de alta calidad en Quito, Ecuador.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["LocalBusiness", "Architect"],
+          "name": "JE Escobar Arquitecto",
+          "description": "Estudio de arquitectura en Quito, Ecuador. Especializado en diseño residencial, arquitectura corporativa, interiorismo y urbanismo.",
+          "url": "https://jescobar.arq",
+          "telephone": ["+593996240249", "+593980498569"],
+          "email": "jescobar.arq@gmail.com",
+          "image": "portafolio/arq.-ernesto-escobar/julio-ernesto-escobar-noboa.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Quito",
+            "addressRegion": "Pichincha",
+            "addressCountry": "EC"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -0.1807,
+            "longitude": -78.4678
+          },
+          "sameAs": ["https://www.instagram.com/arq.ernestoescobar"]
+        },
+        {
+          "@type": "Person",
+          "name": "Julio Ernesto Escobar Noboa",
+          "jobTitle": "Arquitecto",
+          "description": "Arquitecto profesional en Quito, Ecuador, con experiencia en diseño residencial, corporativo, interiorismo y urbanismo.",
+          "email": "jescobar.arq@gmail.com",
+          "telephone": "+593996240249",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Quito",
+            "addressRegion": "Pichincha",
+            "addressCountry": "EC"
+          },
+          "sameAs": ["https://www.instagram.com/arq.ernestoescobar"]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Preconexión anticipada con servidores externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Precarga de imagen hero (mejora LCP) -->
+    <link rel="preload" as="image" href="portafolio/diego-larrea/perspectiva.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuentes no bloqueantes (elimina render-blocking) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"></noscript>
+    <style>
+        :root {
+            --bpa-black: #000000;
+            --bpa-white: #ffffff;
+            --bpa-gray: #f4f4f4;
+            --bpa-accent: #c5a47e;
+        }
+        body { font-family: 'Open Sans', sans-serif; background-color: var(--bpa-white); color: var(--bpa-black); overflow-x: hidden; }
+        h1, h2, h3, .font-montserrat { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+        
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { 
+            content: ''; position: absolute; width: 0; height: 1px; 
+            bottom: -2px; left: 0; background-color: var(--bpa-black); 
+            transition: width 0.3s; 
+        }
+        .nav-link:hover::after { width: 100%; }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('portafolio/diego-larrea/perspectiva.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .project-grid-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+        }
+        .project-grid-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .project-grid-item:hover img { transform: scale(1.05); }
+        .project-grid-item .overlay {
+            position: absolute; inset: 0; background: rgba(0,0,0,0.5);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.4s ease;
+            backdrop-filter: blur(2px);
+        }
+        .project-grid-item:hover .overlay { opacity: 1; }
+        
+        .carousel-track { display: flex; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+        .carousel-item { min-width: 100%; }
+        
+        .filter-btn.active { border-bottom: 2px solid var(--bpa-black); font-weight: 700; }
+        
+        .fade-in { animation: fadeIn 1.2s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Scroll Reveal Transitions */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Visually hidden but readable by search engines and screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm px-8 py-6 flex justify-between items-center border-b border-gray-100">
+        <div class="flex items-center">
+            <a href="index.html" title="Arq. Julio Ernesto Escobar Noboa — Inicio del portafolio">
+                <img src="portafolio/arq.-ernesto-escobar/logo-principla.png" alt="Logo JE Escobar Arquitecto — Julio Ernesto Escobar Noboa, arquitecto en Quito, Ecuador" class="h-12 md:h-16 object-contain cursor-pointer">
+            </a>
+        </div>
+        <div class="hidden lg:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
+            <div class="group relative cursor-pointer">
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <div class="absolute top-full right-0 hidden group-hover:block bg-white shadow-2xl border border-gray-100 w-56 py-4 z-50">
+                    <a href="javascript:void(0)" onclick="filterProjects('all')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Todos los Proyectos</a>
+                    <div class="h-px bg-gray-100 my-2"></div>
+                    <a href="javascript:void(0)" onclick="filterProjects('residencial')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Residencial</a>
+                    <a href="javascript:void(0)" onclick="filterProjects('corporativo')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Corporativo</a>
+                    <a href="javascript:void(0)" onclick="filterProjects('educativo')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Educativo</a>
+                    <a href="javascript:void(0)" onclick="filterProjects('interiorismo')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Interiorismo</a>
+                    <a href="javascript:void(0)" onclick="filterProjects('urbanismo')" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Urbanismo</a>
+                </div>
+            </div>
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="profile.html" class="nav-link">Perfil</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <button id="mobile-menu-button" class="lg:hidden text-black focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-[60] bg-white flex flex-col items-center justify-center space-y-8 text-xs font-semibold uppercase tracking-widest">
+        <button id="close-menu" class="absolute top-8 right-8 text-black focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="#proyectos" class="mobile-nav-link hover:text-gray-500 transition">Proyectos</a>
+        <a href="servicios.html" class="mobile-nav-link hover:text-gray-500 transition">Servicios</a>
+        <a href="profile.html" class="mobile-nav-link hover:text-gray-500 transition">Perfil</a>
+        <a href="contacto.html" class="mobile-nav-link hover:text-gray-500 transition">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen w-full flex items-center justify-center text-center text-white px-4">
+        <div class="fade-in">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-4 tracking-tighter leading-none">
+                ARQUITECTURA<br><span class="font-light italic">DE PRECISIÓN</span>
+            </h1>
+            <p class="sr-only">Arq. Julio Ernesto Escobar Noboa — Arquitecto en Quito, Ecuador. Especialista en diseño residencial, arquitectura corporativa, interiorismo y urbanismo.</p>
+            <h2 class="text-lg md:text-xl font-light uppercase tracking-[0.4em] mb-10 opacity-80">Sintonía entre Espacio y Forma</h2>
+            <a href="#proyectos" class="inline-block border border-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
+                Explorar Portafolio
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="proyectos" class="py-24 bg-white reveal">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-bold font-montserrat mb-4">Proyectos</h2>
+            <div class="h-1 w-16 bg-black mx-auto mb-10"></div>
+            
+            <div class="flex flex-wrap justify-center gap-8 text-xs font-semibold uppercase tracking-widest">
+                <button onclick="filterProjects('all')" class="filter-btn active pb-1 transition" id="btn-all">Todos</button>
+                <button onclick="filterProjects('residencial')" class="filter-btn pb-1 transition" id="btn-residencial">Residencial</button>
+                <button onclick="filterProjects('corporativo')" class="filter-btn pb-1 transition" id="btn-corporativo">Corporativo</button>
+                <button onclick="filterProjects('educativo')" class="filter-btn pb-1 transition" id="btn-educativo">Educativo</button>
+                <button onclick="filterProjects('interiorismo')" class="filter-btn pb-1 transition" id="btn-interiorismo">Interiorismo</button>
+                <button onclick="filterProjects('urbanismo')" class="filter-btn pb-1 transition" id="btn-urbanismo">Urbanismo</button>
+            </div>
+        </div>
+
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-3 gap-0 w-full">
+            <!-- Injected by JS -->
+        </div>
+    </section>
+
+    <!-- Banners Section -->
+    <section class="py-12 bg-white overflow-hidden reveal">
+        <div class="relative max-w-full mx-auto">
+            <div id="banner-track" class="carousel-track">
+                <!-- Banners injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section class="py-24 bg-gray-100 px-6 overflow-hidden reveal">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold font-montserrat mb-12 uppercase tracking-tighter">Archivo de obras ejecutadas</h2>
+            <div class="relative overflow-hidden rounded-sm shadow-2xl">
+                <div id="carousel-track" class="carousel-track">
+                    <!-- Images injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section REMOVED — ver contacto.html -->
+    <section id="contacto" class="hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
+            <!-- Left Side: Info -->
+            <div>
+                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6 block">Contacto</span>
+                <h2 class="text-4xl md:text-6xl font-bold font-montserrat mb-8 leading-tight tracking-tighter">
+                    Conversemos sobre<br>tu próximo proyecto
+                </h2>
+                <p class="text-gray-600 leading-loose font-light text-lg mb-12 max-w-md">
+                    Estoy disponible para nuevos desafíos arquitectónicos. Ya sea un proyecto residencial, corporativo o de remodelación, estaré encantado de escuchar tus ideas y convertirlas en realidad.
+                </p>
+                
+                <div class="space-y-8">
+                    <div class="flex items-center group cursor-pointer">
+                        <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 group-hover:bg-black group-hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Correo Electrónico</p>
+                            <a href="mailto:jescobar.arq@gmail.com" class="text-sm font-semibold hover:text-gray-500 transition">jescobar.arq@gmail.com</a>
+                        </div>
+                    </div>
+                     <div class="flex items-center group cursor-pointer">
+                         <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 group-hover:bg-[#25D366] group-hover:text-white transition duration-300">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                             </svg>
+                             </div>
+                             <div>
+                                 <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Whatsapp</p>
+                                 <div class="flex flex-col space-y-1">
+                                     <a href="https://wa.me/593996240249" class="text-sm font-semibold hover:text-gray-500 transition">+593 99 624 0249</a>
+                                     <a href="https://wa.me/593980498569" class="text-sm font-semibold hover:text-gray-500 transition">+593 980 498 569</a>
+                                 </div>
+                             </div>
+                         </div>
+                    <div class="flex items-center group cursor-pointer">
+                        <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 group-hover:bg-[#0A66C2] group-hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/jeescobar-arq/" target="_blank" class="text-sm font-semibold hover:text-gray-500 transition">jeescobar-arq</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center group cursor-pointer pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center mr-4 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:via-red-500 group-hover:to-purple-600 group-hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-gray-400">Instagram</p>
+                            <a href="https://www.instagram.com/arq.ernestoescobar" target="_blank" class="text-sm font-semibold hover:text-gray-500 transition">@arq.ernestoescobar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Form Side -->
+            <div>
+                <form id="contact-form" action="https://formspree.io/f/xzzbjwqk" method="POST" class="space-y-6">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Nombre Completo</label>
+                        <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-4 bg-white border border-gray-100 focus:border-gray-300 outline-none transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Correo Electrónico</label>
+                        <input type="email" name="email" placeholder="tu@correo.com" required class="w-full p-4 bg-white border border-gray-100 focus:border-gray-300 outline-none transition text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">Mensaje</label>
+                        <textarea name="mensaje" placeholder="Cuéntame sobre tu proyecto..." rows="5" required class="w-full p-4 bg-white border border-gray-100 focus:border-gray-300 outline-none transition text-sm"></textarea>
+                    </div>
+                    <div id="form-success" class="hidden text-center py-4 text-sm font-semibold text-green-700 bg-green-50 border border-green-200">
+                        ¡Mensaje enviado! Me pondré en contacto contigo pronto.
+                    </div>
+                    <button type="submit" class="w-full bg-black text-white py-4 font-bold uppercase text-xs tracking-widest hover:bg-gray-800 transition duration-300 flex items-center justify-center">
+                        Enviar Mensaje <span class="ml-2">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-12 bg-white border-t border-gray-100">
+        <!-- Iconos de contacto horizontales -->
+        <div class="flex justify-center items-center gap-6 mb-8 flex-wrap">
+            <!-- Email -->
+            <a href="mailto:jescobar.arq@gmail.com" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-black group-hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500 group-hover:text-black transition hidden sm:block">jescobar.arq@gmail.com</span>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/593996240249" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500 group-hover:text-black transition hidden sm:block">+593 99 624 0249</span>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/jeescobar-arq/" target="_blank" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[#0A66C2] group-hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500 group-hover:text-black transition hidden sm:block">jeescobar-arq</span>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/arq.ernestoescobar" target="_blank" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:via-red-500 group-hover:to-purple-600 group-hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.691-4.919-4.919-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.059 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4z"/>
+                    </svg>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gray-500 group-hover:text-black transition hidden sm:block">@arq.ernestoescobar</span>
+            </a>
+        </div>
+        <p class="text-center text-[10px] uppercase tracking-widest text-gray-400">
+            &copy; 2026 Arq. Julio Ernesto Escobar Noboa | Todos los derechos reservados.
+        </p>
+    </footer>
+
+
+    <script src="projects-data.js"></script>
+    <script>
+        // Diagnostic banner for image loading errors
+        window.addEventListener('error', function(e) {
+            if (e.target.tagName === 'IMG') {
+                console.error('Failed to load image:', e.target.src);
+                if (!document.getElementById('diagnostic-banner')) {
+                    const banner = document.createElement('div');
+                    banner.id = 'diagnostic-banner';
+                    banner.style.position = 'fixed';
+                    banner.style.top = '0';
+                    banner.style.left = '0';
+                    banner.style.width = '100%';
+                    banner.style.backgroundColor = '#fee2e2';
+                    banner.style.color = '#991b1b';
+                    banner.style.padding = '15px';
+                    banner.style.textAlign = 'center';
+                    banner.style.zIndex = '9999';
+                    banner.style.fontSize = '14px';
+                    banner.style.borderBottom = '1px solid #f87171';
+                    banner.style.fontFamily = 'sans-serif';
+                    banner.innerHTML = `
+                        <strong>⚠️ Error de carga de imágenes detectado de manera local.</strong> <br>
+                        Asegúrate de estar abriendo la página desde la carpeta <code>portfolio-static</code>. <br>
+                        Ruta del archivo actual: <code>${window.location.href}</code> <br>
+                        Intento de carga fallido para: <code>${e.target.src}</code> <br>
+                        <button onclick="this.parentElement.remove()" style="margin-top: 10px; background: #991b1b; color: white; border: none; padding: 5px 15px; cursor: pointer; border-radius: 3px;">Cerrar</button>
+                    `;
+                    document.body.appendChild(banner);
+                }
+            }
+        }, true);
+
+        function renderProjects(filter = 'all') {
+            const grid = document.getElementById('projects-grid');
+            const filtered = filter === 'all' ? projects : projects.filter(p => p.cat === filter);
+            
+            const html = filtered.map(p => `
+                <div class="project-grid-item group" onclick="sessionStorage.setItem('projectId','${p.id}');window.location.href='project-detail.html?id=${p.id}'">
+                    <img src="${p.img}" alt="${p.title}" loading="lazy">
+                    <div class="overlay">
+                        <h3 class="text-white font-montserrat text-xs uppercase tracking-widest px-4 text-center">${p.title}</h3>
+                    </div>
+                </div>
+            `).join('');
+            
+            grid.innerHTML = html;
+        }
+
+        function filterProjects(cat) {
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + cat).classList.add('active');
+            renderProjects(cat);
+        }
+
+        function initCarousel() {
+            const track = document.getElementById('carousel-track');
+            track.innerHTML = archiveImages.map(img => `
+                <div class="carousel-item">
+                    <img src="${img}" loading="lazy" class="w-full h-[500px] object-cover pointer-events-none grayscale hover:grayscale-0 transition duration-700">
+                </div>
+            `).join('');
+    
+            let index = 0;
+            setInterval(() => {
+                index++;
+                if (index >= archiveImages.length) index = 0;
+                track.style.transform = `translateX(-${index * 100}%)`;
+            }, 4000);
+        }
+    
+        function initBannerCarousel() {
+            const track = document.getElementById('banner-track');
+            if (!track) return;
+            
+            track.innerHTML = bannerImages.map(img => `
+                <div class="carousel-item">
+                    <img src="${img}" loading="lazy" class="w-full h-auto object-contain pointer-events-none transition duration-700">
+                </div>
+            `).join('');
+    
+            let index = 0;
+            setInterval(() => {
+                index++;
+                if (index >= bannerImages.length) index = 0;
+                track.style.transform = `translateX(-${index * 100}%)`;
+            }, 5000); // 5 second interval for banners
+        }
+    
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            btn.textContent = 'Enviando...';
+            btn.disabled = true;
+
+            try {
+                const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (res.ok) {
+                    form.reset();
+                    document.getElementById('form-success').classList.remove('hidden');
+                    btn.textContent = 'Mensaje Enviado';
+                } else {
+                    btn.textContent = 'Error, intenta de nuevo';
+                    btn.disabled = false;
+                }
+            } catch {
+                btn.textContent = 'Error de red, intenta de nuevo';
+                btn.disabled = false;
+            }
+        }
+
+        function initScrollReveal() {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        }
+
+        window.onload = () => {
+            renderProjects();
+            initCarousel();
+            initBannerCarousel();
+            initScrollReveal();
+            document.querySelector('form').addEventListener('submit', handleContactSubmit);
+
+            // Mobile Menu Logic
+            const menuBtn = document.getElementById('mobile-menu-button');
+            const closeBtn = document.getElementById('close-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+            closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            mobileLinks.forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+        };
+    </script>
+</body>
+</html>

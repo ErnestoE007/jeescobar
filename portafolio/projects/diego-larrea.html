@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivienda Diego Larrea | JE Escobar</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    .project-hero {
+      height: 70vh;
+      background: url('../diego-larrea/perspectiva.png') center/cover;
+      position: relative;
+    }
+    .project-header {
+      padding: 6rem 0;
+    }
+    .project-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+    .meta-item h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .project-description {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin-bottom: 4rem;
+    }
+    .image-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .image-gallery img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    .image-full {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+        <button class="theme-toggle" aria-label="Cambiar modo">☽</button>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero"></section>
+
+    <section class="container project-header">
+      <h1 class="text-display reveal" style="font-size: 4rem; margin-bottom: 1.5rem;">Vivienda Diego Larrea</h1>
+      <p class="project-description reveal">Una residencia contemporánea que prioriza la integración de espacios sociales y la entrada de luz natural. Ubicada en un entorno suburbano, la vivienda se despliega en dos niveles con un lenguaje arquitectónico de líneas puras y materiales honestos.</p>
+      
+      <div class="project-meta reveal">
+        <div class="meta-item">
+          <h4>Ubicación</h4>
+          <p>Quito, Ecuador</p>
+        </div>
+        <div class="meta-item">
+          <h4>Año</h4>
+          <p>2026</p>
+        </div>
+        <div class="meta-item">
+          <h4>Categoría</h4>
+          <p>Residencial</p>
+        </div>
+        <div class="meta-item">
+          <h4>Superficie</h4>
+          <p>240 m²</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="image-gallery">
+        <img src="../diego-larrea/fachada-frontal.png" alt="Fachada Frontal" class="reveal">
+        <img src="../diego-larrea/sala.png" alt="Interior Sala" class="reveal">
+        <img src="../diego-larrea/cocina-comedor.png" alt="Cocina Comedor" class="reveal">
+        <img src="../diego-larrea/fachada-posterior.png" alt="Fachada Posterior" class="reveal">
+      </div>
+      <img src="../diego-larrea/planta-style-transfer02.png" alt="Planta Arquitectónica" class="image-full reveal">
+
+      <h2 class="text-display reveal" style="font-size: 2rem; margin-top: 4rem; margin-bottom: 2rem;">Planimetría</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem;">
+        <img src="../diego-larrea/planta-alta.jpg" alt="Planta Alta" class="reveal" style="width:100%;">
+        <img src="../diego-larrea/planta-baja.jpg" alt="Planta Baja" class="reveal" style="width:100%;">
+      </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 0; text-align: center;">
+      <a href="../index.html#proyectos" class="text-display" style="border-bottom: 2px solid var(--fg); padding-bottom: 0.5rem;">Volver a Proyectos</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-logo"><a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a></div>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </div>
+      <p class="text-muted" style="font-size:0.8rem;">&copy; 2026 Julio Ernesto Escobar Noboa.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

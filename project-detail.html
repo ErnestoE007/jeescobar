@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Proyecto | Arq. Julio Ernesto Escobar Noboa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"></noscript>
+
+    <style>
+        :root {
+            --bpa-black: #000000;
+            --bpa-white: #ffffff;
+            --bpa-accent: #c5a47e;
+        }
+        body { font-family: 'Open Sans', sans-serif; background-color: var(--bpa-white); color: var(--bpa-black); overflow-x: hidden; }
+        h1, h2, h3, .font-montserrat { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+
+        .fade-in { animation: fadeIn 0.9s ease-out both; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Hero image full-bleed */
+        .hero-img { width: 100%; max-height: 85vh; object-fit: cover; display: block; }
+
+        /* Gallery grid */
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; }
+        .gallery-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; transition: opacity 0.4s; }
+        .gallery-grid img:hover { opacity: 0.88; }
+        .gallery-grid .span-full { grid-column: 1 / -1; }
+        .gallery-grid .span-full img { aspect-ratio: 16/7; }
+
+        /* Memoria text formatting */
+        .memoria-text p { margin-bottom: 1.25rem; line-height: 1.9; }
+        .memoria-text strong { font-weight: 700; display: block; margin-top: 1.5rem; margin-bottom: 0.4rem; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #000; }
+        .memoria-text .dash-item { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; }
+        .memoria-text .dash-item::before { content: '—'; color: var(--bpa-accent); position: absolute; left: 0; }
+
+        /* Nav */
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0; background-color: #000; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+
+        /* Lightbox */
+        #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 9999; align-items: center; justify-content: center; }
+        #lightbox.open { display: flex; }
+        #lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+        #lightbox-close { position: absolute; top: 1.5rem; right: 2rem; color: white; font-size: 2rem; cursor: pointer; line-height: 1; }
+        #lightbox-prev, #lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 2rem; cursor: pointer; padding: 1rem; user-select: none; }
+        #lightbox-prev { left: 1rem; }
+        #lightbox-next { right: 1rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm px-8 py-5 flex justify-between items-center border-b border-gray-100">
+        <a href="index.html" title="Volver al inicio">
+            <img src="portafolio/arq.-ernesto-escobar/logo-principla.png" alt="JE Escobar Arquitecto" class="h-10 md:h-14 object-contain">
+        </a>
+        <a href="index.html#proyectos" class="text-xs font-bold uppercase tracking-widest hover:text-gray-500 transition flex items-center gap-2">
+            <span>←</span> Portafolio
+        </a>
+    </nav>
+
+    <!-- Main content -->
+    <main id="project-content" class="pt-24">
+        <div class="flex items-center justify-center h-64 text-gray-300 text-sm uppercase tracking-widest">Cargando...</div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span id="lightbox-close">&times;</span>
+        <span id="lightbox-prev">&#8592;</span>
+        <img id="lightbox-img" src="" alt="">
+        <span id="lightbox-next">&#8594;</span>
+    </div>
+
+    <footer class="py-12 text-center text-[10px] uppercase tracking-widest text-gray-400 bg-white border-t border-gray-100 mt-24">
+        &copy; 2026 Arq. Julio Ernesto Escobar Noboa | Todos los derechos reservados.
+    </footer>
+
+    <script src="projects-data.js"></script>
+    <script>
+        let lightboxImages = [];
+        let lightboxIndex = 0;
+
+        function openLightbox(imgs, idx) {
+            lightboxImages = imgs;
+            lightboxIndex = idx;
+            document.getElementById('lightbox-img').src = imgs[idx];
+            document.getElementById('lightbox').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function lightboxNav(dir) {
+            lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
+            document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex];
+        }
+
+        document.getElementById('lightbox-close').onclick = closeLightbox;
+        document.getElementById('lightbox-prev').onclick = () => lightboxNav(-1);
+        document.getElementById('lightbox-next').onclick = () => lightboxNav(1);
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', e => {
+            if (!document.getElementById('lightbox').classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') lightboxNav(-1);
+            if (e.key === 'ArrowRight') lightboxNav(1);
+        });
+
+        function formatMemoria(text) {
+            if (!text) return '';
+            const lines = text.trim().split('\n');
+            let html = '';
+            for (const line of lines) {
+                const trimmed = line.trim();
+                if (!trimmed) { html += '<div class="mb-2"></div>'; continue; }
+                if (trimmed.startsWith('—') || trimmed.startsWith('•')) {
+                    html += `<div class="dash-item text-sm text-gray-600">${trimmed.replace(/^[—•]\s*/, '')}</div>`;
+                } else if (/^\d+\./.test(trimmed) || trimmed === trimmed.toUpperCase() && trimmed.length > 5 && !trimmed.endsWith('.')) {
+                    html += `<strong>${trimmed}</strong>`;
+                } else {
+                    html += `<p class="text-sm text-gray-600">${trimmed}</p>`;
+                }
+            }
+            return html;
+        }
+
+        let _galleryImages = [];
+
+        function buildGalleryHTML(gallery) {
+            if (!gallery || gallery.length === 0) return '';
+            _galleryImages = gallery;
+            let html = '<div class="gallery-grid" id="gallery-grid">';
+            gallery.forEach((src, i) => {
+                const isOdd = gallery.length % 2 !== 0;
+                const isLast = i === gallery.length - 1;
+                const spanFull = isOdd && isLast;
+                html += `<div class="${spanFull ? 'span-full' : ''}" data-gallery-index="${i}" style="cursor:zoom-in">
+                    <img src="${src}" loading="lazy" alt="Imagen ${i+1} del proyecto">
+                </div>`;
+            });
+            html += '</div>';
+            return html;
+        }
+
+        document.addEventListener('click', function(e) {
+            const cell = e.target.closest('[data-gallery-index]');
+            if (cell) {
+                const i = parseInt(cell.getAttribute('data-gallery-index'), 10);
+                openLightbox(_galleryImages, i);
+            }
+        });
+
+        function loadProject() {
+            const params = new URLSearchParams(window.location.search);
+            // Fallback a sessionStorage: algunos servidores (clean URLs) eliminan el query string
+            const id = params.get('id') || sessionStorage.getItem('projectId');
+            const project = projects.find(p => p.id === id);
+
+            if (!project) {
+                document.getElementById('project-content').innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-64 text-center">
+                        <p class="text-gray-400 text-sm uppercase tracking-widest mb-6">Proyecto no encontrado</p>
+                        <a href="index.html" class="text-xs font-bold uppercase tracking-widest underline">Volver al portafolio</a>
+                    </div>`;
+                return;
+            }
+
+            document.title = `${project.title} | Arq. Julio Ernesto Escobar Noboa`;
+
+            const categoryLabels = {
+                residencial: 'Residencial',
+                corporativo: 'Corporativo',
+                educativo: 'Educativo',
+                interiorismo: 'Interiorismo',
+                urbanismo: 'Urbanismo'
+            };
+
+            const memoriaHTML = project.memoria ? `
+                <section class="py-20 border-t border-gray-100">
+                    <div class="max-w-5xl mx-auto px-6">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6 block">Memoria Descriptiva</span>
+                        <div class="memoria-text grid md:grid-cols-2 gap-12">
+                            ${formatMemoria(project.memoria)}
+                        </div>
+                    </div>
+                </section>` : '';
+
+            document.getElementById('project-content').innerHTML = `
+                <div class="fade-in">
+                    <!-- Hero image -->
+                    <div class="w-full overflow-hidden">
+                        <img src="${project.img}" class="hero-img" alt="${project.title} — ${project.description}">
+                    </div>
+
+                    <!-- Header info -->
+                    <div class="max-w-5xl mx-auto px-6 pt-14 pb-10">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#c5a47e] mb-3 block">${categoryLabels[project.cat] || project.cat}</span>
+                        <h1 class="text-4xl md:text-6xl font-extrabold font-montserrat tracking-tighter leading-none mb-6">${project.title}</h1>
+                        <p class="text-gray-500 text-base md:text-lg leading-loose font-light max-w-3xl">${project.description}</p>
+                    </div>
+
+                    <!-- Metadata bar -->
+                    <div class="border-t border-b border-gray-100 py-6">
+                        <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+                            <div>
+                                <span class="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1">Ubicación</span>
+                                <p class="text-sm font-semibold">${project.location || 'Quito, Ecuador'}</p>
+                            </div>
+                            <div>
+                                <span class="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1">Año</span>
+                                <p class="text-sm font-semibold">${project.year || '2024'}</p>
+                            </div>
+                            <div>
+                                <span class="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1">Categoría</span>
+                                <p class="text-sm font-semibold">${categoryLabels[project.cat] || project.cat}</p>
+                            </div>
+                            <div>
+                                <span class="block text-[9px] font-bold uppercase tracking-widest text-gray-400 mb-1">Superficie</span>
+                                <p class="text-sm font-semibold">${project.area || 'N/A'}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="max-w-5xl mx-auto px-6 pt-16">
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-8 block">Galería</span>
+                        ${buildGalleryHTML(project.gallery)}
+                    </div>
+
+                    <!-- Memoria descriptiva -->
+                    ${memoriaHTML}
+
+                    <!-- CTA -->
+                    <div class="bg-black text-white text-center py-20 px-6 mt-20">
+                        <h3 class="font-montserrat text-2xl md:text-3xl font-extrabold tracking-tighter mb-4">¿Te interesa un proyecto similar?</h3>
+                        <p class="text-gray-400 font-light mb-8 text-sm">Contáctame y conversamos sobre tu idea.</p>
+                        <a href="index.html#contacto" class="inline-block border border-white px-10 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
+                            Contactar ahora
+        </a>
+                    </div>
+                </div>`;
+        }
+
+        window.onload = loadProject;
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# robots.txt — Portafolio Arq. Julio Ernesto Escobar Noboa
+# https://jeescobar.com
+
+User-agent: *
+Allow: /
+
+# Carpeta interna de configuracion de Claude Code
+Disallow: /.claude/
+
+# Documentos internos del portafolio (no deben indexarse)
+Disallow: /*.pdf$
+Disallow: /*.docx$
+Disallow: /*.mov$
+
+Sitemap: https://jeescobar.com/sitemap.xml

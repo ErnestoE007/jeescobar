@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Hernan Escobar | JE Escobar</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    .project-hero {
+      height: 70vh;
+      background: url('../hernan-escobar/imagen-style-transfer02.png') center/cover;
+      position: relative;
+    }
+    .project-header { padding: 6rem 0; }
+    .project-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+    .meta-item h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .project-description { font-size: 1.25rem; max-width: 800px; margin-bottom: 4rem; }
+    .image-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 4rem; }
+    .image-gallery img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  </style>
+</head>
+<body>
+  <header class="site-header scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+        <button class="theme-toggle" aria-label="Cambiar modo">☽</button>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="project-hero"></section>
+    <section class="container project-header">
+      <h1 class="text-display reveal" style="font-size: 4rem; margin-bottom: 1.5rem;">Casa Hernan Escobar</h1>
+      <p class="project-description reveal">Propuesta residencial que combina la calidez de la madera con estructuras de hormigón visto. El proyecto se organiza en torno a un patio central que permite la ventilación cruzada y una iluminación cenital constante.</p>
+      <div class="project-meta reveal">
+        <div class="meta-item"><h4>Ubicación</h4><p>Quito, Ecuador</p></div>
+        <div class="meta-item"><h4>Año</h4><p>2024</p></div>
+        <div class="meta-item"><h4>Categoría</h4><p>Residencial</p></div>
+        <div class="meta-item"><h4>Estado</h4><p>Diseño</p></div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="image-gallery">
+        <img src="../hernan-escobar/fachada-frontal.png" alt="Fachada" class="reveal">
+        <img src="../hernan-escobar/escena-5-upscale01.png" alt="Interior 1" class="reveal">
+        <img src="../hernan-escobar/escena-6-upscale01.png" alt="Interior 2" class="reveal">
+        <img src="../hernan-escobar/escena-7-upscale01.png" alt="Vista Nocturna" class="reveal">
+      </div>
+      <img src="../hernan-escobar/planta.png" alt="Planta" style="width:100%;" class="reveal">
+    </section>
+    <section class="container" style="padding: 4rem 0; text-align: center;">
+      <a href="../index.html#proyectos" class="text-display" style="border-bottom: 2px solid var(--fg); padding-bottom: 0.5rem;">Volver a Proyectos</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-logo"><a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a></div>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </div>
+      <p class="text-muted" style="font-size:0.8rem;">&copy; 2026 Julio Ernesto Escobar Noboa.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

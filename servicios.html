@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Arq. Julio Ernesto Escobar Noboa — Arquitecto en Quito, Ecuador</title>
+
+    <meta name="description" content="Servicios de arquitectura en Quito, Ecuador: planificación y diseño, dirección de obra, gestión de permisos. Arq. Julio Ernesto Escobar Noboa.">
+    <meta name="keywords" content="servicios arquitectura Quito, diseño arquitectónico Ecuador, dirección de obra Quito, permisos construcción Ecuador, BIM Quito, modelado 3D arquitectura Ecuador">
+    <meta name="author" content="Arq. Julio Ernesto Escobar Noboa">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Servicios | Arq. Julio Ernesto Escobar Noboa">
+    <meta property="og:description" content="Planificación, diseño, dirección de obra y gestión de permisos. Arquitectura integral en Quito, Ecuador.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"></noscript>
+
+    <style>
+        :root {
+            --bpa-black: #000000;
+            --bpa-white: #ffffff;
+            --bpa-gray: #f4f4f4;
+            --bpa-accent: #c5a47e;
+        }
+        body { font-family: 'Open Sans', sans-serif; background-color: var(--bpa-white); color: var(--bpa-black); overflow-x: hidden; }
+        h1, h2, h3, h4, .font-montserrat { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 1px;
+            bottom: -2px; left: 0; background-color: var(--bpa-black);
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after { width: 100%; }
+
+        .service-card {
+            border-left: 2px solid #000;
+            transition: border-color 0.3s, background 0.3s;
+        }
+        .service-card:hover { border-color: var(--bpa-accent); background: #fafafa; }
+
+        .bullet-item::before {
+            content: '—';
+            color: var(--bpa-accent);
+            margin-right: 0.75rem;
+            font-weight: 700;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1), transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm px-8 py-6 flex justify-between items-center border-b border-gray-100">
+        <div class="flex items-center">
+            <a href="index.html" title="Arq. Julio Ernesto Escobar Noboa — Inicio">
+                <img src="portafolio/arq.-ernesto-escobar/logo-principla.png" alt="Logo JE Escobar Arquitecto" class="h-12 md:h-16 object-contain cursor-pointer">
+            </a>
+        </div>
+        <div class="hidden lg:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
+            <div class="group relative cursor-pointer">
+                <a href="index.html#proyectos" class="nav-link">Proyectos</a>
+                <div class="absolute top-full right-0 hidden group-hover:block bg-white shadow-2xl border border-gray-100 w-56 py-4 z-50">
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Todos los Proyectos</a>
+                    <div class="h-px bg-gray-100 my-2"></div>
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Residencial</a>
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Corporativo</a>
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Educativo</a>
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Interiorismo</a>
+                    <a href="index.html#proyectos" class="block px-6 py-3 hover:bg-gray-50 text-gray-600 hover:text-black transition">Urbanismo</a>
+                </div>
+            </div>
+            <a href="servicios.html" class="nav-link" style="border-bottom: 2px solid #000; padding-bottom: 2px;">Servicios</a>
+            <a href="profile.html" class="nav-link">Perfil</a>
+            <a href="index.html#contacto" class="nav-link">Contacto</a>
+        </div>
+        <button id="mobile-menu-button" class="lg:hidden text-black focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-[60] bg-white flex flex-col items-center justify-center space-y-8 text-xs font-semibold uppercase tracking-widest">
+        <button id="close-menu" class="absolute top-8 right-8 text-black focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="index.html#proyectos" class="mobile-nav-link hover:text-gray-500 transition">Proyectos</a>
+        <a href="servicios.html" class="mobile-nav-link hover:text-gray-500 transition">Servicios</a>
+        <a href="profile.html" class="mobile-nav-link hover:text-gray-500 transition">Perfil</a>
+        <a href="index.html#contacto" class="mobile-nav-link hover:text-gray-500 transition">Contacto</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-40 pb-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-6 block">Lo que ofrezco</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-6">Servicios</h1>
+            <div class="h-1 w-16 bg-black mb-10"></div>
+            <p class="text-gray-500 font-light text-lg max-w-2xl leading-loose">
+                Arquitectura integral de principio a fin — desde la idea hasta la entrega de llaves, con rigor técnico, visión estética y gestión eficiente.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="pb-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto space-y-6 reveal">
+
+            <!-- Servicio 1 -->
+            <div class="service-card p-10 md:p-14">
+                <div class="grid lg:grid-cols-3 gap-10 items-start">
+                    <div class="lg:col-span-1">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#c5a47e] mb-3 block">01</span>
+                        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">Planificación, Diseño y Construcción</h2>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <p class="text-gray-500 font-light leading-loose mb-8 text-base">
+                            Transformamos ideas en realidades tangibles, abarcando desde la concepción inicial hasta la ingeniería de detalle.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Presupuestos y proyección técnica financiera.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Desarrollo arquitectónico y estructural.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Ingeniería de instalaciones (eléctricas, electrónicas e hidrosanitarias).</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Planificación y diseño urbano.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Modelado BIM y renderizado 3D.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="service-card p-10 md:p-14">
+                <div class="grid lg:grid-cols-3 gap-10 items-start">
+                    <div class="lg:col-span-1">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#c5a47e] mb-3 block">02</span>
+                        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">Dirección y Gerencia de Obra</h2>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <p class="text-gray-500 font-light leading-loose mb-8 text-base">
+                            Optimizamos cada recurso para garantizar que el proyecto se ejecute en los tiempos y costos previstos, mitigando cualquier desviación.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Administración integral de proyectos.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Estrategia y logística operativa.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Monitoreo riguroso de cronogramas y presupuestos.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Sincronización de equipos multidisciplinarios.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Análisis y mitigación de riesgos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-card p-10 md:p-14">
+                <div class="grid lg:grid-cols-3 gap-10 items-start">
+                    <div class="lg:col-span-1">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[#c5a47e] mb-3 block">03</span>
+                        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">Gestión de Permisos y Trámites Legales</h2>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <p class="text-gray-500 font-light leading-loose mb-8 text-base">
+                            Agilizamos toda la carga administrativa ante las autoridades locales para garantizar la viabilidad legal de tu obra.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Gestión y obtención de licencias de construcción.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Validación y aprobación de planos oficiales.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Permisos operativos y de funcionamiento.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Procesos de regularización de inmuebles.</li>
+                            <li class="bullet-item flex items-start text-sm text-gray-700">Subdivisiones, propiedad horizontal y asignación predial.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-black text-white text-center px-6">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-extrabold tracking-tighter mb-6">¿Tienes un proyecto en mente?</h3>
+            <p class="text-gray-400 font-light mb-10 leading-loose">Conversemos. Estoy disponible para nuevos desafíos arquitectónicos en Quito y todo Ecuador.</p>
+            <a href="index.html#contacto" class="inline-block border border-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
+                Contactar ahora
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-[10px] uppercase tracking-widest text-gray-400 bg-white border-t border-gray-100">
+        &copy; 2026 Arq. Julio Ernesto Escobar Noboa | Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const closeBtn = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
+        // Scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

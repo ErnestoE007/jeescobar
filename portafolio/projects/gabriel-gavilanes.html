@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residencia Gavilanes | JE Escobar</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    .project-hero {
+      height: 70vh;
+      background: url('../ing.-gabriel-gavilanes/escena-8-upscale01.png') center/cover;
+      position: relative;
+    }
+    .project-header {
+      padding: 6rem 0;
+    }
+    .project-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+    .meta-item h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .project-description {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin-bottom: 4rem;
+    }
+    .image-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    .image-gallery img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header scrolled">
+    <div class="container">
+      <a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+        <button class="theme-toggle" aria-label="Cambiar modo">☽</button>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero"></section>
+
+    <section class="container project-header">
+      <h1 class="text-display reveal" style="font-size: 4rem; margin-bottom: 1.5rem;">Residencia Gavilanes</h1>
+      <p class="project-description reveal">Propuesta residencial que explora la volumetría y el contraste de materiales. El diseño integra amplios ventanales para capturar las vistas panorámicas del valle, creando una conexión fluida entre el interior y las terrazas exteriores.</p>
+      
+      <div class="project-meta reveal">
+        <div class="meta-item">
+          <h4>Ubicación</h4>
+          <p>Quito, Ecuador</p>
+        </div>
+        <div class="meta-item">
+          <h4>Año</h4>
+          <p>2024</p>
+        </div>
+        <div class="meta-item">
+          <h4>Categoría</h4>
+          <p>Residencial / Diseño</p>
+        </div>
+        <div class="meta-item">
+          <h4>Estado</h4>
+          <p>En Propuesta</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="image-gallery">
+        <img src="../ing.-gabriel-gavilanes/escena-2-upscale01.png" alt="Vista Exterior 1" class="reveal">
+        <img src="../ing.-gabriel-gavilanes/escena-3-upscale01.png" alt="Vista Exterior 2" class="reveal">
+        <img src="../ing.-gabriel-gavilanes/escena-4-upscale01.png" alt="Detalle Fachada" class="reveal">
+        <img src="../ing.-gabriel-gavilanes/f3.jpg" alt="Render Interior" class="reveal">
+      </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 0; text-align: center;">
+      <a href="../index.html#proyectos" class="text-display" style="border-bottom: 2px solid var(--fg); padding-bottom: 0.5rem;">Volver a Proyectos</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-logo"><a href="../index.html" class="logo">JE Escobar<span>Arquitecto</span></a></div>
+      <div class="footer-links">
+        <a href="../index.html">Inicio</a>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#contacto">Contacto</a>
+      </div>
+      <p class="text-muted" style="font-size:0.8rem;">&copy; 2026 Julio Ernesto Escobar Noboa.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
