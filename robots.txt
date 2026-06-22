@@ -1,5 +1,5 @@
 # robots.txt — Portafolio Arq. Julio Ernesto Escobar Noboa
-# https://arqjeescobar.vercel.app
+# https://jeescobararquitectos.com
 
 User-agent: *
 Allow: /
@@ -12,4 +12,4 @@ Disallow: /*.pdf$
 Disallow: /*.docx$
 Disallow: /*.mov$
 
-Sitemap: https://arqjeescobar.vercel.app/sitemap.xml
+Sitemap: https://jeescobararquitectos.com/sitemap.xml
