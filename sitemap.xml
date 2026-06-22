@@ -1,106 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Pagina principal -->
   <url>
-    <loc>https://jeescobar.com/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://magnificent-frangipane-b74a96.netlify.app/</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Portafolio -->
   <url>
-    <loc>https://jeescobar.com/portafolio/index.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://magnificent-frangipane-b74a96.netlify.app/servicios.html</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Perfil -->
   <url>
-    <loc>https://jeescobar.com/profile.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <loc>https://magnificent-frangipane-b74a96.netlify.app/contacto.html</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://magnificent-frangipane-b74a96.netlify.app/profile.html</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Proyectos individuales -->
-  <url>
-    <loc>https://jeescobar.com/#ana-larrea</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#santiago-mendoza</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#diego-larrea</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#hernan-escobar</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#gabriel-gavilanes</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#coop-matriz</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#coop-cajero</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#escuela-lara</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#mario-silva</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#remodelacion-ln</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://jeescobar.com/#urbano-pila</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=ana-larrea</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=santiago-mendoza</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=diego-larrea</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=hernan-escobar</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=gabriel-gavilanes</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=coop-matriz</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=coop-cajero</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=escuela-lara</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=mario-silva</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=remodelacion-ln</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://magnificent-frangipane-b74a96.netlify.app/project-detail.html?id=urbano-pila</loc><lastmod>2026-06-22</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
 
 </urlset>
