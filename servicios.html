@@ -84,8 +84,9 @@
                 </div>
             </div>
             <a href="servicios.html" class="nav-link" style="border-bottom: 2px solid #000; padding-bottom: 2px;">Servicios</a>
+            <a href="el-estudio.html" class="nav-link">El Estudio</a>
             <a href="profile.html" class="nav-link">Perfil</a>
-            <a href="index.html#contacto" class="nav-link">Contacto</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
         </div>
         <button id="mobile-menu-button" class="lg:hidden text-black focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,8 +104,9 @@
         </button>
         <a href="index.html#proyectos" class="mobile-nav-link hover:text-gray-500 transition">Proyectos</a>
         <a href="servicios.html" class="mobile-nav-link hover:text-gray-500 transition">Servicios</a>
+        <a href="el-estudio.html" class="mobile-nav-link hover:text-gray-500 transition">El Estudio</a>
         <a href="profile.html" class="mobile-nav-link hover:text-gray-500 transition">Perfil</a>
-        <a href="index.html#contacto" class="mobile-nav-link hover:text-gray-500 transition">Contacto</a>
+        <a href="contacto.html" class="mobile-nav-link hover:text-gray-500 transition">Contacto</a>
     </div>
 
     <!-- Page Header -->
@@ -192,12 +194,29 @@
         </div>
     </section>
 
+    <!-- Precios por Especialidad (Banners en cuadrícula) -->
+    <section class="pb-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-12">
+                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400 mb-4 block">Precios por Especialidad</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter">Diseño BIM &amp; MEP por m²</h2>
+                <div class="h-1 w-16 bg-black mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src="portafolio/banner-publicitario/banner-publicitario-principal.png" loading="lazy" alt="Precios de diseño arquitectónico por especialidad en Quito y Guaranda — JE Escobar Arquitecto" class="w-full h-auto border border-gray-100">
+                <img src="portafolio/banner-publicitario/banner-publicitario-arquitectonico.png" loading="lazy" alt="Diseño arquitectónico BIM por metro cuadrado para viviendas en Ecuador" class="w-full h-auto border border-gray-100">
+                <img src="portafolio/banner-publicitario/banner-publicitario-estructural.png" loading="lazy" alt="Diseño estructural BIM por metro cuadrado para viviendas en Ecuador" class="w-full h-auto border border-gray-100">
+                <img src="portafolio/banner-publicitario/banner-publicitario-mep.png" loading="lazy" alt="Diseño BIM-MEP (eléctrico, hidrosanitario y mecánico) por metro cuadrado en Ecuador" class="w-full h-auto border border-gray-100">
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="py-24 bg-black text-white text-center px-6">
         <div class="max-w-2xl mx-auto">
             <h3 class="text-3xl md:text-4xl font-extrabold tracking-tighter mb-6">¿Tienes un proyecto en mente?</h3>
             <p class="text-gray-400 font-light mb-10 leading-loose">Conversemos. Estoy disponible para nuevos desafíos arquitectónicos en Quito y todo Ecuador.</p>
-            <a href="index.html#contacto" class="inline-block border border-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
+            <a href="contacto.html" class="inline-block border border-white px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition duration-500">
                 Contactar ahora
             </a>
         </div>
@@ -216,10 +235,14 @@
         closeBtn.addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
         // Scroll reveal
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        if (!('IntersectionObserver' in window)) {
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+        } else {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); observer.unobserve(e.target); } });
+            }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        }
     </script>
 </body>
 </html>
