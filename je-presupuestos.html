@@ -139,7 +139,7 @@
                         <span>Descargar APK Android<br><span class="text-[9px] font-normal opacity-60">.apk · ~28 MB</span></span>
                     </a>
                 </div>
-                <p class="mt-6 text-xs uppercase tracking-widest text-gray-400">10 días de prueba gratis · sin tarjeta · <a href="#precios" class="underline hover:text-black transition" style="color:var(--bpa-accent)">Ver suscripción $4.99/mes</a></p>
+                <p class="mt-6 text-xs uppercase tracking-widest text-gray-400">10 días de prueba gratis · sin tarjeta · <a href="#precios" class="underline hover:text-black transition" style="color:var(--bpa-accent)">Ver planes desde $4.99/mes</a></p>
             </div>
 
             <!-- Réplica del editor de presupuesto -->
@@ -262,27 +262,63 @@
     <section id="precios" class="px-8 max-w-7xl mx-auto py-24">
         <div class="text-center mb-16 reveal">
             <p class="text-xs font-semibold uppercase tracking-widest" style="color:var(--bpa-accent)">Precios</p>
-            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter mt-4">Suscripción mensual</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter mt-4">Planes de suscripción</h2>
+            <p class="mt-5 text-gray-500 font-light max-w-2xl mx-auto" style="text-transform:none">Mientras más largo el plan, menos pagas por mes. Todos incluyen la app completa.</p>
         </div>
-        <div class="max-w-md mx-auto reveal">
-            <div class="border-2 border-black p-10 text-center bg-white">
-                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">JE presupuestos</p>
-                <div class="mt-6 flex items-baseline justify-center gap-2">
-                    <span class="text-6xl font-extrabold font-montserrat">$4.99</span>
-                    <span class="text-sm uppercase tracking-widest text-gray-500">/ mes</span>
+
+        <!-- Planes -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto reveal">
+            <!-- 1 mes -->
+            <div class="border border-gray-300 p-8 text-center bg-white flex flex-col">
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">1 mes</p>
+                <div class="mt-5 flex items-baseline justify-center gap-1">
+                    <span class="text-4xl font-extrabold font-montserrat">$4.99</span>
                 </div>
-                <p class="mt-4 text-sm text-gray-500 font-light" style="text-transform:none">Acceso completo a la app en Windows y Android, con el catálogo de APU e insumos y las actualizaciones de precios.</p>
-                <ul class="mt-8 space-y-3 text-left text-sm" style="text-transform:none">
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> App completa para Windows y Android</li>
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 2 472 APU y 1 237 insumos incluidos</li>
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> Presupuestos y reportes ilimitados</li>
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> Actualización de precios incluida</li>
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 100% offline · tus datos en tu equipo</li>
-                    <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 10 días de prueba gratis</li>
-                </ul>
-                <a href="#descargar" class="btn-solid block mt-10 py-4 text-xs font-bold uppercase tracking-widest">Contáctame para mi licencia</a>
-                <p class="mt-4 text-[11px] uppercase tracking-widest text-gray-400">La licencia se activa de forma personal</p>
+                <p class="mt-2 text-[11px] uppercase tracking-widest text-gray-400">$4.99 / mes</p>
+                <a href="#descargar" class="btn-line block mt-8 py-3 text-[11px] font-bold uppercase tracking-widest">Elegir plan</a>
             </div>
+            <!-- 3 meses -->
+            <div class="border border-gray-300 p-8 text-center bg-white flex flex-col">
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">3 meses</p>
+                <div class="mt-5 flex items-baseline justify-center gap-1">
+                    <span class="text-4xl font-extrabold font-montserrat">$13.99</span>
+                </div>
+                <p class="mt-2 text-[11px] uppercase tracking-widest text-gray-400">$4.66 / mes · ahorra 7%</p>
+                <a href="#descargar" class="btn-line block mt-8 py-3 text-[11px] font-bold uppercase tracking-widest">Elegir plan</a>
+            </div>
+            <!-- 6 meses -->
+            <div class="border border-gray-300 p-8 text-center bg-white flex flex-col">
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">6 meses</p>
+                <div class="mt-5 flex items-baseline justify-center gap-1">
+                    <span class="text-4xl font-extrabold font-montserrat">$25.99</span>
+                </div>
+                <p class="mt-2 text-[11px] uppercase tracking-widest text-gray-400">$4.33 / mes · ahorra 13%</p>
+                <a href="#descargar" class="btn-line block mt-8 py-3 text-[11px] font-bold uppercase tracking-widest">Elegir plan</a>
+            </div>
+            <!-- 12 meses -->
+            <div class="border-2 border-black p-8 text-center bg-white flex flex-col relative">
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1">Mejor precio</span>
+                <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">12 meses</p>
+                <div class="mt-5 flex items-baseline justify-center gap-1">
+                    <span class="text-4xl font-extrabold font-montserrat">$49.99</span>
+                </div>
+                <p class="mt-2 text-[11px] uppercase tracking-widest" style="color:var(--bpa-accent)">$4.17 / mes · ahorra 17%</p>
+                <a href="#descargar" class="btn-solid block mt-8 py-3 text-[11px] font-bold uppercase tracking-widest">Elegir plan</a>
+            </div>
+        </div>
+
+        <!-- Lo que incluyen todos los planes -->
+        <div class="max-w-3xl mx-auto mt-14 reveal">
+            <p class="text-center text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">Todos los planes incluyen</p>
+            <ul class="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-sm" style="text-transform:none">
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> App completa para Windows y Android</li>
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 2 472 APU y 1 237 insumos incluidos</li>
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> Presupuestos y reportes ilimitados</li>
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> Actualización de precios incluida</li>
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 100% offline · tus datos en tu equipo</li>
+                <li class="flex gap-3"><span style="color:var(--bpa-accent)">✓</span> 10 días de prueba gratis</li>
+            </ul>
+            <p class="mt-8 text-center text-[11px] uppercase tracking-widest text-gray-400">La licencia se activa de forma personal</p>
         </div>
     </section>
 
@@ -317,8 +353,8 @@
             <div class="mt-8 flex flex-wrap justify-center gap-4">
                 <a href="https://wa.me/593980498569?text=Hola,%20quiero%20la%20licencia%20de%20JE%20presupuestos" target="_blank"
                    class="px-10 py-4 text-xs font-bold uppercase tracking-widest bg-[#25D366] text-white hover:opacity-90 transition">WhatsApp: +593 98 049 8569</a>
-                <a href="mailto:jescobarn@gmail.com?subject=Licencia%20JE%20presupuestos"
-                   class="px-10 py-4 text-xs font-bold uppercase tracking-widest border border-white text-white hover:bg-white hover:text-black transition">jescobarn@gmail.com</a>
+                <a href="mailto:jescobarn.arq@gmail.com?subject=Licencia%20JE%20presupuestos"
+                   class="px-10 py-4 text-xs font-bold uppercase tracking-widest border border-white text-white hover:bg-white hover:text-black transition">jescobarn.arq@gmail.com</a>
             </div>
             <p class="mt-8 text-[11px] uppercase tracking-widest text-gray-500">Al escribirme, incluye el ID de equipo que muestra la app en la pantalla de Licencia</p>
         </div>
