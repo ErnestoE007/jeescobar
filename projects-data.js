@@ -287,6 +287,39 @@ El comedor redondo rompe la geometría rígida de la cocina, mejora la circulaci
         ]
     },
     {
+        id: 'consultorio-be',
+        title: 'Consultorio BE',
+        cat: 'interiorismo',
+        img: 'portafolio/Od.-Belen-Escobar/Interior-Sala-y-Consultorio.jpg',
+        location: 'Quito, Ecuador',
+        year: '2026',
+        description: 'Remodelación y diseño interior de un consultorio odontológico. Una superficie reducida convertida en un entorno de alta eficiencia clínica, confort y calidez espacial.',
+        memoria: `Un consultorio odontológico no tiene por qué sentirse frío. Esta remodelación integral transforma una superficie reducida en un espacio de alta eficiencia clínica que, al mismo tiempo, recibe al paciente con calidez y serenidad.
+
+EL RETO
+
+Romper con la frialdad aséptica habitual de los centros de salud sin renunciar al rigor de los flujos sanitarios. La planta se organiza con una zonificación compacta y fluida que hace trabajar cada metro cuadrado.
+
+CÓMO SE ORGANIZA
+
+— Sala de espera a escala humana, con tonos cálidos y mobiliario ergonómico que amortigua el ingreso
+— Mamparas y puertas corredizas de madera y vidrio que separan la espera del área clínica: privacidad acústica y visual sin perder luz natural ni profundidad
+— Área operatoria con sillón dental de última tecnología, plano de consulta personalizada y mobiliario clínico modular empotrado a medida
+— Medio baño optimizado con cerámica texturizada en tonos tierra, grifería moderna y mesones flotantes
+
+MATERIALIDAD Y CONFORT
+
+Maderas cálidas en carpinterías y detalles, muros con acabados sutiles en acentos neutros y porcelanato rectificado claro que refleja la luz y facilita la higiene. Paneles LED empotrados para la luz técnica y luz perimetral cálida en el mobiliario: una atmósfera que reduce el estrés del paciente y da al especialista condiciones visuales óptimas.`,
+        gallery: [
+            'portafolio/Od.-Belen-Escobar/Interior-Sala-y-Consultorio.jpg',
+            'portafolio/Od.-Belen-Escobar/Interior-Sala-de-espera.jpg',
+            'portafolio/Od.-Belen-Escobar/Interior-Sala-de-espera-Lateral-Derecho.jpg',
+            'portafolio/Od.-Belen-Escobar/Interior-1.jpg',
+            'portafolio/Od.-Belen-Escobar/Interior-Consultorio-lateral-izquierdo.jpg',
+            'portafolio/Od.-Belen-Escobar/Planta.jpg'
+        ]
+    },
+    {
         id: 'remodelacion-ln',
         title: 'Remodelación LN',
         cat: 'interiorismo',
