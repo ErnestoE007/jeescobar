@@ -290,9 +290,10 @@ El comedor redondo rompe la geometría rígida de la cocina, mejora la circulaci
         id: 'consultorio-be',
         title: 'Consultorio BE',
         cat: 'interiorismo',
-        img: 'portafolio/Od.-Belen-Escobar/Interior-Sala-y-Consultorio.jpg',
-        location: 'Quito, Ecuador',
+        img: 'portafolio/Od.-Belen-Escobar/Foto-Consultorio.jpg',
+        location: 'Guaranda, Ecuador',
         year: '2026',
+        area: '24.72 m²',
         description: 'Remodelación y diseño interior de un consultorio odontológico. Una superficie reducida convertida en un entorno de alta eficiencia clínica, confort y calidez espacial.',
         memoria: `Un consultorio odontológico no tiene por qué sentirse frío. Esta remodelación integral transforma una superficie reducida en un espacio de alta eficiencia clínica que, al mismo tiempo, recibe al paciente con calidez y serenidad.
 
@@ -311,11 +312,13 @@ MATERIALIDAD Y CONFORT
 
 Maderas cálidas en carpinterías y detalles, muros con acabados sutiles en acentos neutros y porcelanato rectificado claro que refleja la luz y facilita la higiene. Paneles LED empotrados para la luz técnica y luz perimetral cálida en el mobiliario: una atmósfera que reduce el estrés del paciente y da al especialista condiciones visuales óptimas.`,
         gallery: [
+            'portafolio/Od.-Belen-Escobar/Foto-Consultorio.jpg',
             'portafolio/Od.-Belen-Escobar/Interior-Sala-y-Consultorio.jpg',
             'portafolio/Od.-Belen-Escobar/Interior-Sala-de-espera.jpg',
             'portafolio/Od.-Belen-Escobar/Interior-Sala-de-espera-Lateral-Derecho.jpg',
             'portafolio/Od.-Belen-Escobar/Interior-1.jpg',
             'portafolio/Od.-Belen-Escobar/Interior-Consultorio-lateral-izquierdo.jpg',
+            'portafolio/Od.-Belen-Escobar/Foto-Sala-de-Espera.jpg',
             'portafolio/Od.-Belen-Escobar/Planta.jpg'
         ]
     },
@@ -404,7 +407,13 @@ const archiveImages = [
     'portafolio/obras-en-ejecucion/img-6409.jpg',
     'portafolio/obras-en-ejecucion/img-6430.jpg',
     'portafolio/obras-en-ejecucion/img-6472.jpg',
-    'portafolio/obras-en-ejecucion/img-6474.jpg'
+    'portafolio/obras-en-ejecucion/img-6474.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7359.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7492.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7533.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7611.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7728.jpg',
+    'portafolio/obras-en-ejecucion/IMG-7730.jpg'
 ];
 
 const bannerImages = [
