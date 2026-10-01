@@ -261,34 +261,97 @@
                 <p class="mt-6 text-xs uppercase tracking-widest text-gray-400">30 días de prueba gratis · sin tarjeta · <a href="#precios" class="underline hover:text-black transition" style="color:var(--bpa-accent)">Ver planes desde $4.99/mes</a></p>
             </div>
 
-            <!-- Réplica del editor de presupuesto -->
+            <!-- Carrusel en bucle interactivo de capturas del software -->
             <div class="reveal">
-                <div class="app-shot" role="img" aria-label="Interfaz del software JE Presupuestos mostrando el editor de presupuesto con árbol de rubros, unidades, cantidades, precios unitarios y subtotales en Windows">
-                    <div class="app-top">
-                        <span class="app-back">←</span>
-                        <span>
-                            <span class="app-name">Casa L</span><br>
-                            <span class="app-sub">Sin cliente · Indirectos 15%</span>
-                        </span>
-                        <span class="app-total"><span class="l">Total</span><br><span class="v">$98,16</span></span>
+                <div id="hero-carousel" class="group relative" aria-roledescription="carousel" aria-label="Capturas del software JE Presupuestos">
+                    <!-- Contenedor con altura uniforme para evitar saltos de diseño -->
+                    <div class="relative h-[275px] sm:h-[285px] md:h-[295px] flex items-center justify-center">
+                        
+                        <!-- Slide 0: Editor de Presupuesto y APU -->
+                        <div class="hero-carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-100 z-10 pointer-events-auto"
+                             data-caption="Interfaz del editor de presupuesto de obra con desglose de rubros y APU">
+                            <div class="app-shot w-full h-full flex flex-col justify-between" role="img" aria-label="Interfaz del software JE Presupuestos mostrando el editor de presupuesto con árbol de rubros, unidades, cantidades, precios unitarios y subtotales en Windows">
+                                <div class="app-top">
+                                    <span class="app-back">←</span>
+                                    <span>
+                                        <span class="app-name">Casa L</span><br>
+                                        <span class="app-sub">Sin cliente · Indirectos 15%</span>
+                                    </span>
+                                    <span class="app-total"><span class="l">Total</span><br><span class="v">$98,16</span></span>
+                                </div>
+                                <div class="app-cols">
+                                    <div>Descripción</div><div>Und</div><div>Cant.</div><div>P.Unit</div><div>Subtot.</div>
+                                </div>
+                                <div class="app-row grp">
+                                    <div class="d">▾ insumos</div><div class="u"></div><div class="r"></div><div class="r pu"></div><div class="r st">$98,16</div>
+                                </div>
+                                <div class="app-row">
+                                    <div class="d">• LIMPIEZA Y DESBROCE</div><div class="u">M2</div><div class="r">30</div><div class="r pu">$2,66</div><div class="r st">$79,80</div>
+                                </div>
+                                <div class="app-row">
+                                    <div class="d">• DESALOJO DE MATERIAL DE EXCAVACIÓN</div><div class="u">M3</div><div class="r">1</div><div class="r pu">$3,26</div><div class="r st">$3,26</div>
+                                </div>
+                                <div class="app-row" style="border-bottom:0">
+                                    <div class="d">• Excavación a manual para cimiento</div><div class="u">m3</div><div class="r">1</div><div class="r pu">$15,10</div><div class="r st">$15,10</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 1: Diagrama de Gantt -->
+                        <div class="hero-carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none"
+                             data-caption="Cronograma valorado · Diagrama de Gantt interactivo con ruta crítica y avance real">
+                            <div class="app-shot w-full h-full flex items-center justify-center bg-[#f8fafc]">
+                                <img src="portafolio/je-presupuestos/cronograma-gantt.png"
+                                     alt="Cronograma valorado con Diagrama de Gantt en JE Presupuestos"
+                                     class="w-full h-full object-contain p-2 md:p-3 block"
+                                     loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Tablero Kanban -->
+                        <div class="hero-carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none"
+                             data-caption="Gestión visual de obra · Tablero Kanban con seguimiento por capítulos y estados">
+                            <div class="app-shot w-full h-full flex items-center justify-center bg-[#f8fafc]">
+                                <img src="portafolio/je-presupuestos/tablero-kanban.png"
+                                     alt="Tablero Kanban de seguimiento de obra en JE Presupuestos"
+                                     class="w-full h-full object-contain p-2 md:p-3 block"
+                                     loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Slide 3: Diagrama de Red PDM -->
+                        <div class="hero-carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 z-0 pointer-events-none"
+                             data-caption="Planificación de red · Diagrama de red PDM con cálculo de dependencias y holguras">
+                            <div class="app-shot w-full h-full flex items-center justify-center bg-[#f8fafc]">
+                                <img src="portafolio/je-presupuestos/diagrama-red-pdm.png"
+                                     alt="Diagrama de red PDM y dependencias en JE Presupuestos"
+                                     class="w-full h-full object-contain p-2 md:p-3 block"
+                                     loading="lazy">
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación flotantes -->
+                        <button type="button" id="hero-prev-btn" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/95 shadow-md hover:bg-white text-black flex items-center justify-center transition opacity-0 group-hover:opacity-100 hover:scale-105" aria-label="Diapositiva anterior">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button type="button" id="hero-next-btn" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 rounded-full bg-white/95 shadow-md hover:bg-white text-black flex items-center justify-center transition opacity-0 group-hover:opacity-100 hover:scale-105" aria-label="Diapositiva siguiente">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                        </button>
                     </div>
-                    <div class="app-cols">
-                        <div>Descripción</div><div>Und</div><div>Cant.</div><div>P.Unit</div><div>Subtot.</div>
+
+                    <!-- Indicadores (Dots) -->
+                    <div class="flex justify-center items-center gap-2 mt-4" role="tablist" aria-label="Navegación del carrusel">
+                        <button type="button" class="hero-carousel-dot w-6 h-1.5 rounded-full transition-all duration-300 bg-black" data-slide="0" aria-label="Ver Editor de presupuesto"></button>
+                        <button type="button" class="hero-carousel-dot w-2 h-1.5 rounded-full transition-all duration-300 bg-slate-300 hover:bg-slate-400" data-slide="1" aria-label="Ver Diagrama de Gantt"></button>
+                        <button type="button" class="hero-carousel-dot w-2 h-1.5 rounded-full transition-all duration-300 bg-slate-300 hover:bg-slate-400" data-slide="2" aria-label="Ver Tablero Kanban"></button>
+                        <button type="button" class="hero-carousel-dot w-2 h-1.5 rounded-full transition-all duration-300 bg-slate-300 hover:bg-slate-400" data-slide="3" aria-label="Ver Diagrama de Red PDM"></button>
                     </div>
-                    <div class="app-row grp">
-                        <div class="d">▾ insumos</div><div class="u"></div><div class="r"></div><div class="r pu"></div><div class="r st">$98,16</div>
-                    </div>
-                    <div class="app-row">
-                        <div class="d">• LIMPIEZA Y DESBROCE</div><div class="u">M2</div><div class="r">30</div><div class="r pu">$2,66</div><div class="r st">$79,80</div>
-                    </div>
-                    <div class="app-row">
-                        <div class="d">• DESALOJO DE MATERIAL DE EXCAVACIÓN</div><div class="u">M3</div><div class="r">1</div><div class="r pu">$3,26</div><div class="r st">$3,26</div>
-                    </div>
-                    <div class="app-row" style="border-bottom:0">
-                        <div class="d">• Excavación a manual para cimiento</div><div class="u">m3</div><div class="r">1</div><div class="r pu">$15,10</div><div class="r st">$15,10</div>
-                    </div>
+
+                    <!-- Leyenda dinámica -->
+                    <p id="hero-carousel-caption" class="mt-2 text-center text-[10px] uppercase tracking-widest text-gray-400 min-h-[1.5rem] transition-opacity duration-300">
+                        Interfaz del editor de presupuesto de obra con desglose de rubros y APU
+                    </p>
                 </div>
-                <p class="mt-4 text-center text-[10px] uppercase tracking-widest text-gray-400">Interfaz del editor de presupuesto de obra con desglose de rubros y APU</p>
             </div>
         </div>
     </section>
@@ -687,6 +750,118 @@
         } else {
             document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
         }
+
+        // ===== CARRUSEL HERO EN BUCLE =====
+        (function initHeroCarousel() {
+            const carousel = document.getElementById('hero-carousel');
+            if (!carousel) return;
+
+            const slides = carousel.querySelectorAll('.hero-carousel-slide');
+            const dots = carousel.querySelectorAll('.hero-carousel-dot');
+            const captionEl = document.getElementById('hero-carousel-caption');
+            const prevBtn = document.getElementById('hero-prev-btn');
+            const nextBtn = document.getElementById('hero-next-btn');
+
+            if (!slides.length) return;
+
+            let current = 0;
+            let timer = null;
+            const intervalTime = 4000;
+
+            function showSlide(index) {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                current = index;
+
+                slides.forEach((slide, i) => {
+                    if (i === current) {
+                        slide.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+                        slide.classList.add('opacity-100', 'pointer-events-auto', 'z-10');
+                    } else {
+                        slide.classList.remove('opacity-100', 'pointer-events-auto', 'z-10');
+                        slide.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+                    }
+                });
+
+                dots.forEach((dot, i) => {
+                    if (i === current) {
+                        dot.classList.remove('w-2', 'bg-slate-300');
+                        dot.classList.add('w-6', 'bg-black');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-black');
+                        dot.classList.add('w-2', 'bg-slate-300');
+                    }
+                });
+
+                if (captionEl && slides[current]) {
+                    captionEl.style.opacity = '0';
+                    setTimeout(() => {
+                        captionEl.textContent = slides[current].getAttribute('data-caption') || '';
+                        captionEl.style.opacity = '1';
+                    }, 200);
+                }
+            }
+
+            function startAutoPlay() {
+                stopAutoPlay();
+                timer = setInterval(() => {
+                    showSlide(current + 1);
+                }, intervalTime);
+            }
+
+            function stopAutoPlay() {
+                if (timer) {
+                    clearInterval(timer);
+                    timer = null;
+                }
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showSlide(current - 1);
+                    startAutoPlay();
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showSlide(current + 1);
+                    startAutoPlay();
+                });
+            }
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    showSlide(i);
+                    startAutoPlay();
+                });
+            });
+
+            // Pausar al pasar el ratón (hover)
+            carousel.addEventListener('mouseenter', stopAutoPlay);
+            carousel.addEventListener('mouseleave', startAutoPlay);
+
+            // Soporte para gestos táctiles (touch)
+            let touchStartX = 0;
+            carousel.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                stopAutoPlay();
+            }, { passive: true });
+
+            carousel.addEventListener('touchend', (e) => {
+                const touchEndX = e.changedTouches[0].screenX;
+                if (touchEndX < touchStartX - 40) {
+                    showSlide(current + 1);
+                } else if (touchEndX > touchStartX + 40) {
+                    showSlide(current - 1);
+                }
+                startAutoPlay();
+            }, { passive: true });
+
+            startAutoPlay();
+        })();
 
         // FAQ accordion
         document.querySelectorAll('.faq-question').forEach(btn => {
